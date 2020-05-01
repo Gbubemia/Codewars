@@ -15,23 +15,23 @@ const familyTree = (fams, parent) => {
 }
 console.log(JSON.stringify(familyTree(families, null), null, 2));
 
-// const categories = [
-//  {id: 'animals', parent: null},
-//  {id: 'mammals', parent: 'animals'},
-//  {id: 'cats', parent: 'mammals'},
-//  {id: 'dogs', parent:'mammals' },
-//  {id: 'bingo', parent: 'dogs'},
-//  {id: 'fredo', parent: 'dogs'},
-//  {id: 'azen', parent: 'cats'},
-//  {id: 'kitty', parent: 'cats'},
-// ];
+ const categories = [
+  {id: 'animals', parent: null},
+  {id: 'mammals', parent: 'animals'},
+  {id: 'cats', parent: 'mammals'},
+  {id: 'dogs', parent:'mammals' },
+  {id: 'bingo', parent: 'dogs'},
+  {id: 'fredo', parent: 'dogs'},
+  {id: 'azen', parent: 'cats'},
+  {id: 'kitty', parent: 'cats'},
+ ];
 
-// const makeTree =(animalKinds, parent) => {
-//  let node = {};
-//  animalKinds.filter(c => c.parent === parent)
-//  .forEach(c =>
-//   node[c.id] = makeTree(animalKinds, c.id))
-//   return node;
-// }
+ const makeTree =(animalKinds, parent) => {
+  let node = {};
+  animalKinds.filter(c => c.parent === parent)
+    .forEach(c =>
+    node[c.id] = makeTree(animalKinds, c.id))
+  return node;
+ }
 
-// console.log(JSON.stringify(makeTree(categories, null), null, 2));
+ console.log(JSON.stringify(makeTree(categories, null), null, 2));
