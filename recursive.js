@@ -4,14 +4,6 @@ const families =[
  { id: 'Iyo-Osafoname', parent: 'Irabor' },
  { id: 'Okhoro', parent:  'Irabor'},
  { id: 'Rose', parent: 'Irabor' },
- { id: 'Festus', parent: 'Ehigiegba' },
- { id: 'Dickson', parent: 'Ehigiegba' },
- { id: 'Osaretin', parent: 'Iyo-Osafoname' },
- { id: 'Julie', parent: 'Iyo-Osafoname' },
- { id: 'Iye-Osahon', parent: 'Okhoro' },
- { id: 'Monday', parent: 'Okhoro' },
- { id: 'Paul', parent: 'Rose' },
- { id: 'Andrew', parent: 'Rose' },
 ];
 const familyTree = (fams, parent) => {
   let node = {};
