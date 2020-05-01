@@ -1,0 +1,18 @@
+johnson waffle 80 2
+johnson blender 200 1
+johnson knife 10 4
+Eseosa waffle 440 144
+Eseosa blender 13 117
+Eseosa chair 55 66
+Minaj waffle 80 1
+Minaj knife 10 2
+Minaj pot 20 3
+
+
+
+
+
+
+
+
+
